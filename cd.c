@@ -129,7 +129,7 @@ void cd_previous(data_shell *datash)
 }
 
 /**
- * cd_to_home - make changes to home directory 
+ * cd_to_home - make changes to home directory
  *
  * @datash: data relevant (environ)
  * Return: no return
