@@ -39,7 +39,7 @@ char *without_comment(char *in)
  * shell_loop - Loop of shell
  * @datash: data relevant (av, input, args)
  *
- * Return: no return.
+ * Return: return null.
  */
 void shell_loop(data_shell *datash)
 {
