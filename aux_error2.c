@@ -17,6 +17,8 @@ char *error_env(data_shell *datash)
 	length = _strlen(datash->av[0]) + _strlen(ver_str);
 	length += _strlen(datash->args[0]) + _strlen(msg) + 4;
 	error = malloc(sizeof(char) * (length + 1));
+
+	/*Chech for errros*/
 	if (error == 0)
 	{
 		free(error);
@@ -51,6 +53,8 @@ char *error_path_126(data_shell *datash)
 	length = _strlen(datash->av[0]) + _strlen(ver_str);
 	length += _strlen(datash->args[0]) + 24;
 	error = malloc(sizeof(char) * (length + 1));
+	
+	/*check for error*/
 	if (error == 0)
 	{
 		free(error);
