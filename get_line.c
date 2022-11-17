@@ -10,6 +10,7 @@
 void bring_line(char **lineptr, size_t *n, char *buffer, size_t j)
 {
 
+/*check the lineptr pointer */
 	if (*lineptr == NULL)
 	{
 		if  (j > BUFSIZE)
