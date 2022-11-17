@@ -25,6 +25,8 @@ int shell(void)
 			*(argv + i) = words;
 			words = _strtok(NULL, delim);
 		}
+		*(argv + (i + 1)) = NULL;
+
 		pid = fork();
 		if (pid == -1) /*check if Fork fails*/
 			return (-1);
@@ -43,7 +45,6 @@ int shell(void)
 		}
 	}
 	free(buff);
-	/* free(words); */
 	exit(status);
 	return (0);
 }
